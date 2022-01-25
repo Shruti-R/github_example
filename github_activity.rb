@@ -19,7 +19,7 @@ args = {
 OptionParser.new do |opt|
   opt.banner = "Usage: github_pull_requests.rb [options]"
   opt.on('-u', '--user String', 'Github Repository User, default is "puma"') { |o| args[:user] = o }
-  opt.on('-o', '--owner String', 'Github Repository Name, default is "puma"') { |o| args[:repo] = o }
+  opt.on('-r', '--repo String', 'Github Repository Name, default is "puma"') { |o| args[:repo] = o }
 end.parse!
 
 # Fetch pull requests for specified user and repository and display details in tabular format
